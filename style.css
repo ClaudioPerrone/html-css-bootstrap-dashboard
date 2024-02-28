@@ -1,0 +1,39 @@
+
+/*-----------------------
+
+    MS-PAGE-CONTAINER
+
+-----------------------*/
+.ms-page-container
+{
+    height: calc(100vh-70px);
+}
+/*-----------------------
+
+    HEADER
+
+-----------------------*/
+header
+{
+    height: 70px;
+    background-color: white;
+}
+/*-----------------------
+
+    ASIDE
+
+-----------------------*/
+aside
+{
+    width: 200px;
+}
+/*-----------------------
+
+    MAIN
+
+-----------------------*/
+main
+{
+    width: calc(100% - 200px);
+    overflow-y: auto;
+}
