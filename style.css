@@ -12,10 +12,6 @@ ul
 {
     max-width: 30px;
 }
-.ms-w-40 
-{
-    min-width: 45% !important;   
-}
 td:not(:first-child), th:not(:first-child)
 {
     text-align: center;
@@ -86,6 +82,14 @@ header
 {
     height: 70px;
 }
+.mobile-logo
+{
+    max-width: 40px;
+}
+header .mobile-logo
+{
+    display: none;
+}
 /*-----------------------
 
     ASIDE
@@ -106,11 +110,119 @@ main
     width: calc(100% - 150px);
     overflow-y: auto;
 }
+.boolean-plus
+{
+ display: none;
+}
+.offcanvas-end
+{
+    min-width: 45% !important;
+}
 /*-----------------------
 
     MEDIA-QUERY
 
 -----------------------*/
-@media screen and (min-width:) {
+@media screen and (max-width: 1400px)
+{
+    .boolean-pill
+    {
+        display: none;
+    }
+    .boolean-plus
+    {
+        display: inline;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    /*-----------------------
+
+        MAIN
+
+    -----------------------*/
+    main .data
+    {
+        display: none;
+    }
+    .boolean-plus
+    {
+        display: inline;
+    }
+    .student-count
+    {
+        flex-direction: column;
+    }
+    .count-new
+    {
+        order: 1;
+    }
+    .count-boolean
+    {
+        order: 2;
+    }
+    .count-count
+    {
+        order: 3;
+    }
+} 
+@media screen and (max-width: 992px) 
+{
+    /*-----------------------
+
+        HEADER
+
+    -----------------------*/
+    header .fa-bars
+    {
+        display: none;
+    }
+    header .fa-circle-question
+    {
+        display: none;
+    }
+    header .fa-ellipsis-vertical
+    {
+        display: none;
+    }
+    header .logo
+    {
+        display: none;
+    }
+    header .mobile-logo
+    {
+        display: inline;
+    }
+    /*-----------------------
+
+        ASIDE
+
+    -----------------------*/
+    aside
+    {
+        width: 50px;
+    }
+    aside span
+    {
+        display: none;
+    }
+    /*-----------------------
+
+        MAIN
+
+    -----------------------*/
+    main
+    {
+        width: calc(100% - 50px);
+    }
+    main .roi
+    {
+        display: none;
+    }
+    .offcanvas-end
     
+    {
+        min-width: 100% !important;
+    }
+
 }
