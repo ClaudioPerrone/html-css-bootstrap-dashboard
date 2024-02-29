@@ -8,9 +8,13 @@ ul
     list-style-type: none;
     padding-left: 0;
 }
-.ms-w-35-px
+.ms-w-30-px
 {
-    max-width: 35px;
+    max-width: 30px;
+}
+.ms-w-40 
+{
+    min-width: 45% !important;   
 }
 td:not(:first-child), th:not(:first-child)
 {
@@ -38,6 +42,10 @@ td:not(:first-child), th:not(:first-child)
 .ms-fs
 {
     font-size: 14px;
+}
+.fa-bell, .plus
+{
+    cursor: pointer;
 }
 /*-----------------------
 
@@ -97,4 +105,12 @@ main
 {
     width: calc(100% - 150px);
     overflow-y: auto;
+}
+/*-----------------------
+
+    MEDIA-QUERY
+
+-----------------------*/
+@media screen and (min-width:) {
+    
 }
