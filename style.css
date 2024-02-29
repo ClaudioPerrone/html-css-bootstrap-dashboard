@@ -8,9 +8,9 @@ ul
     list-style-type: none;
     padding-left: 0;
 }
-.ms-h-100
+.ms-w-35-px
 {
-    height: 100%;
+    max-width: 35px;
 }
 td:not(:first-child), th:not(:first-child)
 {
@@ -23,6 +23,21 @@ td:not(:first-child), th:not(:first-child)
     border: 1px solid #6c757d;
     line-height: 25px;
     border-radius: 5px;
+}
+.square
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.card-header
+{
+    font-size: 30px;
+}
+.ms-fs
+{
+    font-size: 14px;
 }
 /*-----------------------
 
@@ -40,6 +55,10 @@ td:not(:first-child), th:not(:first-child)
 .ms-clr-grey
 {
     color: #6c757d;
+}
+.ms-clr-orange
+{
+    color: orange;
 }
 /*-----------------------
 
